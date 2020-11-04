@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Waypoints in Directions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVcCKczOkRn0tGlDzJ6ewzaGVU1sBvUpM&callback=initMap&libraries=&v=weekly"
+      defer></script>
+
+
+  </head>
+
+
+
+  <body>
+
+    <div id="map"></div>
+    <div id="right-panel">
+      <div>
+        <b>Start:</b>
+        <select id="start">
+          <option value="Gore, Southland">Gore, Southland</option>
+          <option value="Invercargill, Southland">Invercargill, Southland</option>
+          <option value="Christchurch, Canterbury">Christchurch, Canterbury</option>
+          <option value="Wanaka, Otago">Wanaka, Otago</option>
+        </select>
+        <br />
+        <b>Waypoints:</b> <br />
+        <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br />
+        <select multiple id="waypoints">
+          <option value="Hamilton, NZ">Hamilton, NZ</option>
+          <option value="Taupo, NZ">Taupo, NZ</option>
+          <option value="Gisborne, NZ">Gisborne, NZ</option>
+          <option value="Hawke's Bay, NZ">Hawke's Bay, NZ</option>
+        </select>
+        <br />
+        <b>End:</b>
+        <select id="end">
+          <option value="Auckland, NZ">Auckland, NZ</option>
+          <option value="Wellington, NZ">Wellington, NZ</option>
+          <option value="San Francisco, CA">Invercargill, Southland<</option>
+          <option value="Los Angeles, CA">Gore, Southland</option>
+        </select>
+        <br />
+        <input type="submit" id="submit" />
+      </div>
+      <div id="directions-panel"></div>
+    </div>
+
+
+
+
+    <!-- jquery -->
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
+
+    <!-- downloaded bootstrap js -->
+    <!-- <script src="bootstrapJs/bootstrap.min.js"> </script> -->
+
+    <!-- cdn -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+
+
+    <script src="js/mapKey.js"></script>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
